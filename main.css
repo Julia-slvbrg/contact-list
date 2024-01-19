@@ -25,9 +25,8 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: auto 100%;
     padding-top: 45px;
 }
 .container h3{
@@ -52,6 +51,12 @@ body{
     font-weight: 700;
     outline-color: rgba(14, 78, 87, 0.377);
 }
+#email-detail{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    color:  rgba(14, 78, 87, 0.637);
+}
 #submit-button{
     background-color: rgba(14, 78, 87, 0.637);
     border-radius: 6px;
@@ -64,13 +69,10 @@ body{
 #submit-button:hover{
     cursor: pointer;
 }
-#submit-button:focus{
-    background-color: #fff;
-}
 #submit-button:active{
     background-color: rgba(14, 78, 87, 0.377);
     transform: scale(1.1);
-    transition: all ease .5s;
+    transition: all ease .10s;
 }
 hr{
     width: 980px;
@@ -80,6 +82,7 @@ hr{
 }
 table{
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: start;
     text-align: left;
@@ -98,16 +101,7 @@ table tr{
 .contact-info-table{
     margin-bottom: 20px;
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    background-color: rgba(14, 78, 87, 0.637);
-    width: 100%;
-    height: 35px;
-    padding-left: 25px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 400;
+.td-cell{
+    text-align: right;
+    padding-left: 10px;
 }
