@@ -11,7 +11,7 @@ const addTable = () => {
     const telInput = document.getElementById('tel-input');
     const emailInput = document.getElementById('email-input');
 
-    if(nameArr.includes(nameInput.value.toLocaleLowerCase())) return alert('Esse contato já foi adicionado.');
+    if(nameArr.includes(nameInput.value.toLocaleLowerCase())) return swal("Erro", "Esse contato já foi adicionado.", "error"); 
     nameArr.push(nameInput.value.toLocaleLowerCase());
     
     const newTable = document.createElement('table');
