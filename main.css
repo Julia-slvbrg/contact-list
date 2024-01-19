@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: rgba(14, 78, 87, 0.637);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+header img{
+    height: 55px;
+    margin-right: 10px;
+}
+body{
+    background-color: #f3ccc621;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto 100%;
+    padding-top: 45px;
+}
+.container h3{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    max-width: 960px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+#contact-form input{
+    height: 30px;
+    width: 300px;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+    border: .5px solid rgba(218, 205, 205, 0.808);
+    color: rgba(14, 78, 87, 0.637);
+    font-weight: 700;
+    outline-color: rgba(14, 78, 87, 0.377);
+}
+#submit-button{
+    background-color: rgba(14, 78, 87, 0.637);
+    border-radius: 6px;
+    border: .5px solid rgba(218, 205, 205, 0.808);
+    height: 35px;
+    margin: 10px 0 0 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+#submit-button:hover{
+    cursor: pointer;
+}
+#submit-button:focus{
+    background-color: #fff;
+}
+#submit-button:active{
+    background-color: rgba(14, 78, 87, 0.377);
+    transform: scale(1.1);
+    transition: all ease .5s;
+}
+hr{
+    width: 980px;
+    height: 2px;
+    background-color: rgba(14, 78, 87, 0.637);
+    margin-bottom: 15px;
+}
+table{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    width: 300px; 
+    padding-left: 6px;
+    color: rgba(5, 14, 15, 0.836);
+    
+} 
+.contact-info-table{
+    border-bottom: 1px solid rgba(14, 78, 87, 0.637);
+}
+table tr{
+    height: 25px;
+    font-size: 17px;
+}
+.contact-info-table{
+    margin-bottom: 20px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(14, 78, 87, 0.637);
+    width: 100%;
+    height: 35px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 400;
+}
