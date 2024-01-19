@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css"/>
     <title>Agenda online</title>
-
+    <link rel="icon" type="img/png" href="./images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
     <header>
@@ -20,48 +18,22 @@
     <main>
         <div class="container">
             <h3>Adicione um novo contato</h3>
+
             <form id="contact-form">
                 <input type="text" placeholder="Nome" id="name-input" required/>
                 <input type="tel" placeholder="Telefone" id="tel-input" required/>
                 <input type="email" placeholder="E-mail" id="email-input" />
+                <p id="email-detail">*O e-mail não é obrigatório.</p>
                 <button type="submit" id="submit-button">Adicionar contato</button>
             </form>
+
             <hr/>
-            <table cellspacing= "0" id="xxxa">
-                <table cellspacing= "0" class="contact-info-table">
-                    <tr>
-                        <th>Nome:</th>
-                        <td>Fulano</td>
-                    </tr>
-                    <tr>
-                        <th>Telefone:</th>
-                        <td>(xx) xxxxx-xxxx</td>
-                    </tr>
-                    <tr>
-                        <th class="last-row">E-mail:</th>
-                        <td class="last-row">fulano@email.com</td>
-                    </tr>
-                </table>
-                <table cellspacing= "0" class="contact-info-table">
-                    <tr>
-                        <th>Nome: </th>
-                        <td>Fulano</td>
-                    </tr>
-                    <tr>
-                        <th>Telefone:</th>
-                        <td>(xx) xxxxx-xxxx</td>
-                    </tr>
-                    <tr>
-                        <th class="last-row">E-mail:</th>
-                        <td class="last-row">fulano@email.com</td>
-                    </tr>
-                </table>
+
+            <table cellspacing= "0" id="outter-table">  
             </table>
         
         </div>
     </main>
-    <footer>
-        <p>&copy; Agenda Online - 2024</p>
-    </footer>    
 </body>
+<script src="./script.js"></script>
 </html>
